@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web player:Music for Everyone</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="navbar">
+                <div class="nav-option " style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">HOME</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">SEARCH</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option" >
+                    <img src="library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first Playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Cerate playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcast to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="backward_icon.png">
+                    <img src="forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge  nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</button>
+                    <i class="fa-regular fa-user  nav-item"></i>
+                </div>
+            </div>
+            <h2>All Songs</h2>
+            <div class="card-container" id="album-cards"></div>
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card" id="top50-card">
+                    <img src="card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Bahara - I Hate Luv Storys</p>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card2img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most playaed...</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most playaed...</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most playaed...</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most playaed...</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most playaed...</p>
+                </div>
+            </div>
+            <br>
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card5img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs Global</p>
+                    <p class="card-info">Your daily update of the most playaed...</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs India</p>
+                    <p class="card-info">Your daily update of the most playaed...</p>
+                </div>
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most playaed...</p>
+                </div>
+                
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+                <br>
+                <h2>All Songs</h2>
+                <div class="card-container" id="album-cards"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="card3img.jpeg">
+                <div class="singer">
+                    <p class="music-name">Daylight</p>
+                    <p class="singer-name">David kushner</p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-window-maximize"></i>
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="player_icon1.png" class="player-icon-control">
+                    <img src="player_icon2.png" class="player-icon-control">
+                    <img src="player_icon3.png" class="player-icon-control" style="opacity:1; height:2rem;">
+                    <img src="player_icon4.png" class="player-icon-control">
+                    <img src="player_icon5.png" class="player-icon-control">
+                </div>
+                <div class="playback-bar">
+                    <span class="cur-time">00:00</span>
+                    <input type="range" class="progress-bar" min="0" max="100">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-solid fa-play control-icons"></i>
+                <i class="fa-solid fa-microphone control-icons"></i>
+                <i class="fa-solid fa-sliders control-icons"></i>
+                <i class="fa-solid fa-volume-high control-icons7"></i>
+                <input type="range" min="0" max="100">
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm" autocomplete="off">
+          <label for="username">Username or Email</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
